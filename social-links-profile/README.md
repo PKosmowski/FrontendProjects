@@ -1,1 +1,1 @@
-![alt text]({58CC2FFA-744C-49E7-A6D9-2C5D57AD4286}.png)
+![alt text](assets\{58CC2FFA-744C-49E7-A6D9-2C5D57AD4286}.png)
