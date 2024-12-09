@@ -44,8 +44,13 @@ body {
     margin: auto;
 }
 
-.weighted, .normal {
-    margin-top: 20px;
+.weighted {
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.normal {
+    margin-top: 40px;
 }
 
 
