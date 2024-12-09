@@ -10,6 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: auto;
 }
 
 .main {
@@ -73,4 +74,9 @@ body {
 .author div {
     margin-left: 10px;
     font-size: larger;
+}
+
+h1:hover {
+    color: hsl(47, 88%, 63%);
+    cursor: pointer;
 }
