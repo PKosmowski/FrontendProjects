@@ -24,7 +24,8 @@ body {
 
 .main img {
     border-radius: 50%;
-    width: 100px;
+    max-width: 100px;
+    width: 100%;
 }
 
 .city {
@@ -50,4 +51,5 @@ body {
     background-color: hsl(75, 94%, 57%);
     color: black;
     cursor: pointer;
+    transition: background-color 1s ease, color 1s ease;
 }
