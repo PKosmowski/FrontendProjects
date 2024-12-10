@@ -25,7 +25,9 @@ body {
     height: 500px;
 }
 
-
+.container-1, .container-2, .container-3, .container-4, .container-5 {
+    box-shadow: 2px 2px 20px rgb(158, 158, 158);
+}
 
 .container-1 {
     position: relative;
@@ -39,40 +41,40 @@ svg {
     position: absolute;
     opacity: 70%;
     left: 340px;
-    bottom: 153px;
+    bottom: 177px;
 }
 
-.container-1 .author {
+.author {
     display: flex;
     align-items: center;
     gap: 1em;
 }
 
-.container-1 .author .title{
+.title{
     opacity: 50%;
 }
 
-.container-1 .author img {
+img {
     border-radius: 50% 50%;
     border: 3px solid hsl(263, 92%, 65%);
 }
 
-.container-1 .author div {
+.author div {
     color: white;
 }
 
-.container-1 .author .name {
+.author .name {
     font-weight: 600;
     font-size: 17px;
 }
 
 
-.container-1 .quote {
+.quote {
     color: white;
     opacity: 50%;
 }
 
-.container-1 .header {
+.header {
     color: white;
     font-size: 18px;
     margin-top: 10px;
@@ -87,6 +89,12 @@ svg {
     padding: 2em;
     border-radius: 10px;
 }
+
+.container-2 img, .container-3 img, .container-5 img {
+    border: none;
+}
+
+
 .container-3 {
     grid-column: 1;
     grid-row: 2;
@@ -111,4 +119,21 @@ svg {
 
 img {
     width: 40px;
+}
+
+
+.container-5 .author .name, .container-3 .author .name {
+    color: hsl(219, 29%, 14%);
+}
+
+.container-5 .author .title, .container-3 .author .title {
+    color: hsl(219, 29%, 14%);
+}
+
+.container-5 .header, .container-3 .header {
+    color: hsl(219, 29%, 14%);
+}
+
+.container-5 .quote, .container-3 .quote {
+    color: hsl(219, 29%, 14%);
 }
