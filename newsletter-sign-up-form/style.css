@@ -84,14 +84,32 @@ button {
 
 .container-submit {
     position: absolute;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
-    width: 875px;
-    height: 600px;
+    gap: 20px;
+    width: 400px;
+    height: 400px;
     margin: auto;
-    background-color: red;
+    background-color: white;
+    padding: 2em;
+    left: 270px;
+    top: 110px;
+    border-radius: 20px;
 }
 .container-submit img {
-    width: 80px;
+    width: 60px;
 }
+
+.submit-header {
+    font-weight: 700;
+    font-size: 60px;
+    /* margin-bottom: 20px; */
+}
+
+.container-submit button {
+    background-color: hsl(4, 100%, 67%);
+    /* width: 100%; */
+    /* margin-top: 40px; */
+}
+
