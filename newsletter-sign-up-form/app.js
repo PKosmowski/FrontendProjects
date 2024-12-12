@@ -33,16 +33,27 @@ document.addEventListener("DOMContentLoaded", () => {
   const subscribeButton = document.getElementById("subscribe");
   const submitContainer = document.querySelector(".container-submit");
   const body = document.body;
-  const test = document.querySelector(".text")
+  const text = document.querySelector(".text")
   const img = document.getElementById("illustration")
   const email = document.getElementById("emailInput").value
+  const emailInput = document.getElementById("emailInput")
+
+  const errorMsg = document.getElementById("errorMsg")
+
+
 
   subscribeButton.addEventListener("click", () => {
     // Dodaj klasę `hidden` do całego body
     const email = document.getElementById("emailInput").value
+
     if (validateEmail(email)) {
       submitContainer.style.display = "flex";
-      test.style.display = "none";
+      text.style.display = "none";
+    } else {
+      emailInput.style.backgroundColor = 'hsl(2 50% 50%)';
+      errorMsg.style.display = 'flex'
+      emailInput.style.color = 'white'
+      
     }
  
 
@@ -53,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const dismissButton = document.getElementById("dismiss");
   dismissButton.addEventListener("click", () => {
     // Usuń klasę `hidden` i schowaj submit-container
-    test.style.display = "flex";
+    text.style.display = "flex";
     submitContainer.style.display = "none";
   });
 });

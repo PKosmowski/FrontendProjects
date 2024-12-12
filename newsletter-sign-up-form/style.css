@@ -113,3 +113,26 @@ button {
     /* margin-top: 40px; */
 }
 
+#subscribe:hover {
+    background-image: linear-gradient(to right, hsl(4, 100%, 67%) , hsl(56, 84%, 66%));
+    border: none;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;;
+}
+
+#errorMsg {
+    display: none;
+    align-self: flex-end;
+    font-weight: 500;
+    /* margin-top: -20px; */
+    color: red;
+
+}
+
+.email-address {
+    display: flex;
+    justify-content: space-between;
+}
