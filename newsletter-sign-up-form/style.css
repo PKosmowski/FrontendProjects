@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    background-color: hsl(234, 29%, 20%);
+    font-family: "Roboto";
+    width: 100%;
+    max-width: 1440px;
+}
+
+.el img {
+    width: 30px;
+}
+
+.start {
+    display: flex;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2em;
+    border-radius: 2em;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    padding: 4em 2em 0 0; 
+}
+
+.header {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.desc {
+    margin-bottom: 20px;
+}
+
+.el {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.el * {
+    margin-top: 10px;
+}
+
+.checks:nth-of-type(5) {
+    margin-bottom: 50px;
+}
+
+.email-address {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+input {
+
+    margin-bottom: 40px;
+    width: 100%;
+    max-width: 700px;
+    height: 50px;
+    border-radius: 10px;
+    text-indent: 20px;
+    border: 1px solid hsla(231, 7%, 60%, 0.541);
+}
+
+button {
+    height: 60px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    background-color: hsl(234, 29%, 20%);
+    border-radius: 10px;
+}
