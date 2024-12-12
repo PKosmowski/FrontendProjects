@@ -11,8 +11,7 @@ const validateEmail = (email) => {
 
 button.onclick = () => {
     const email = document.getElementById("emailInput").value
-    let main = document.querySelector('start')
-    console.log(email);
+    let main = document.getElementsByClassName('start')
     if (validateEmail(email)) {
         console.log('holy!');
         main.className = 'submitted'
