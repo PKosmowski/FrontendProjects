@@ -8,73 +8,137 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  Report for
-  Jeremy Robson
-
-  Daily
-  Weekly
-  Monthly
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="main">
+    <div class="profile">
+      <div class="account-info">
+        <img src="images/image-jeremy.png" alt="Jeremy">
+        <div>Report for</div>
+        <div class="name">Jeremy Robson</div>
+      </div>
+      <div class="buttons">
+        <button>Daily</button>
+        <button>Weekly</button>
+        <button>Monthly</button>
+      </div>
+    </div>
+    <div class="container-work">
+      <img src="images/icon-work.svg" alt="icon Work">
+      <div class="title">
+        <div>Work</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">5hrs</div>
+        <div class="compare">Last daily - 7hr</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">36hrs</div>
+        <div class="compare">Last weekly - 36hr </div>
+      </div>
+      <div class="monthly">
+        <div class="hours">103hrs</div>
+        <div class="compare">Last weekly - 128hrs </div>
+      </div>
+    </div>
+    <div class="container-play">
+      <img src="images/icon-play.svg" alt="icon Play">
+      <div class="title">
+        <div>Play</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">1hrs</div>
+        <div class="compare">Last daily - 2hrs</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">10hrs</div>
+        <div class="compare">Last weekly - 8hrs</div>
+      </div>
+      <div class="monthly">
+        <div class="hours">23hrs</div>
+        <div class="compare">Last weekly - 29hrs </div>
+      </div>
+    </div>
+    <div class="container-study">
+      <img src="images/icon-study.svg" alt="icon Study">
+      <div class="title">
+        <div>Study</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">0hrs</div>
+        <div class="compare">Last daily - 1hrs</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">4hrs</div>
+        <div class="compare">Last weekly - 7hrs</div>
+      </div>
+      <div class="monthly">
+        <div class="hours">13hrs</div>
+        <div class="compare">Last weekly - 19hrs </div>
+      </div>
+    </div>
+    <div class="container-exercise">
+      <img src="images/icon-exercise.svg" alt="icon Exercise">
+      <div class="title">
+        <div>Exercise</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">1hrs</div>
+        <div class="compare">Last daily - 1hrs</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">4hrs</div>
+        <div class="compare">Last weekly - 5hrs</div>
+      </div>
+      <div class="monthly">
+        <div class="hours">11hrs</div>
+        <div class="compare">Last weekly - 18hrs </div>
+      </div>
+    </div>
+    <div class="container-social">
+      <img src="images/icon-social.svg" alt="icon Social">
+      <div class="title">
+        <div>Social</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">1hrs</div>
+        <div class="compare">Last daily - 3hrs</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">5hrs</div>
+        <div class="compare">Last weekly - 10hrs</div>
+      </div>
+      <div class="monthly">
+        <div class="hours">21hrs</div>
+        <div class="compare">Last weekly - 23hrs</div>
+      </div>
+    </div>
+    <div class="container-selfcare">
+      <img src="images/icon-self-care.svg" alt="icon Self Care">
+      <div class="title">
+        <div>Self Care</div>
+        <img src="images/icon-ellipsis.svg" alt="">
+      </div>
+      <div class="daily">
+        <div class="hours">0hrs</div>
+        <div class="compare">Last daily - 1hrs</div>
+      </div>
+      <div class="weekly">
+        <div class="hours">2hrs</div>
+        <div class="compare">Last weekly - 2hrs</div>
+      </div>
+      <div class="monthly">
+        <div class="hours">7hrs</div>
+        <div class="compare">Last weekly - 11hrs </div>
+      </div>
+    </div>
   </div>
+<script src="app.js"></script>
 </body>
 </html>
