@@ -31,28 +31,27 @@
         </div>
         <div class="people">
           <div>Number of People</div>
-          <input id="inputPeople" />
+          <input id="inputPeople"><img class="person" src="images/icon-person.svg" alt="icon-person"/> </input>
         </div>
-      </div>
+    </div>
       <div class="section-right">
-        <div class="tip-sum"></div>
+        <div class="tip-sum">
           <div class="tip-amount">
             <div>Tip amount</div>
             <div>/ person</div>
           </div>
-          <div id="calculateTipAmount">$0.00</div>
-          <div class="total-sum">
-            <div class="total-amount">
-              <div>Total</div>
-              <div>/ person</div>
-            </div>
-            <div id="calculateTotalAmount">$0.00</div>
-          </div>
-          <button>RESET</button>
+          <div class="tip-total">$0.00</div>
         </div>
-
+        <div class="total-sum">
+          <div class="total-amount">
+            <div>Total</div>
+            <div>/ person</div>
+          </div>
+          <div class="calculateTotalAmount">$0.00</div>
+        </div>
+        <button id="resetButton">RESET</button>
+      </div>
     </div>
-  </div>
   <script src="app.js"></script>
 </body>
 </html>
