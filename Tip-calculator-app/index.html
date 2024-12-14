@@ -8,11 +8,7 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="name">SPLI<span>TTER</span></div>
@@ -20,41 +16,43 @@
     <div class="section-left">
       <div class="bill">
         <div>Bill</div>
-        <input id="inputBill" />
+        <input id="inputBill"><img class="dollar" src="images/icon-dollar.svg" alt="icon-dollar"></input>
       </div>
       <div class="tip">
         <div>Select Tip %</div>
         <div class="tips-container">
-          <button class="tip-1">i</button>
-          <button class="tip-2">i</button>
-          <button class="tip-3">i</button>
-          <button class="tip-4">i</button>
-          <button class="tip-5">i</button>
-          <input id="inputTip" />
+          <button class="tip-1">5%</button>
+          <button class="tip-2">10%</button>
+          <button class="tip-3">15%</button>
+          <button class="tip-4">25%</button>
+          <button class="tip-5">50%</button>
+          <input id="inputTip" placeholder="Custom"/>
+        </div>
         </div>
         <div class="people">
           <div>Number of People</div>
           <input id="inputPeople" />
         </div>
       </div>
-    </div>
-    <div class="section-right">
-      <div class="tip-sum"></div>
-        <div class="tip-amount">
-          <div>Tip amount</div>
-          <div>/ person</div>
+      <div class="section-right">
+        <div class="tip-sum"></div>
+          <div class="tip-amount">
+            <div>Tip amount</div>
+            <div>/ person</div>
+          </div>
+          <div id="calculateTipAmount">$0.00</div>
+          <div class="total-sum">
+            <div class="total-amount">
+              <div>Total</div>
+              <div>/ person</div>
+            </div>
+            <div id="calculateTotalAmount">$0.00</div>
+          </div>
+          <button>RESET</button>
         </div>
-        <div id="calculateTipAmount">$0.00</div>
-      </div>
-      <div class="total-sum">
-        <div class="total-amount">
-          <div>Total</div>
-          <div>/ person</div>
-        </div>
-        <div id="calculateTotalAmount">$0.00</div>
-      </div>
-      <button>RESET</button>
+
     </div>
   </div>
+  <script src="app.js"></script>
 </body>
 </html>
