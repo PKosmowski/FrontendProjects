@@ -30,22 +30,31 @@ body {
     text-indent: 40px;
 }
 
+
+
 .profile img {
     width: 90px;
     border: 3px solid white;
     border-radius: 50%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 .account-info {
     background-color: hsl(246, 80%, 60%);
     height: 350px;
     border-radius: 20px;
-    width: 100%;
     width: 300px;
-    box-sizing: content-box;
-    display: flex;
-    flex-direction: column;
+}
+
+.raport {
+    font-size: 20px;
+}
+
+.name {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 .profile .buttons {
@@ -58,6 +67,7 @@ body {
     align-self: center;
 
 }
+
 
 button {
     background-color: hsl(235, 46%, 20%);
@@ -153,3 +163,4 @@ button:hover {
 .container-selfcare .icon-container {
     background-color: hsl(43, 84%, 65%);
 }
+

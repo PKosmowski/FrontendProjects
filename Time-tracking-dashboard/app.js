@@ -18,6 +18,9 @@ function showMonthly() {
     weekly.forEach(el => {
         el.style.display = "none"
     })
+    dailyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    weeklyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    monthlyButton.style.color = 'white'
     
 }
 
@@ -31,6 +34,9 @@ function showDaily() {
     weekly.forEach(el => {
         el.style.display = "none"
     })
+    monthlyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    weeklyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    dailyButton.style.color = 'white'
 }
 
 function showWeekly() {
@@ -43,6 +49,9 @@ function showWeekly() {
     weekly.forEach(el => {
         el.style.display = "flex"
     })
+    monthlyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    dailyButton.style.color = "rgba(255, 255, 255, 0.459)"
+    weeklyButton.style.color = 'white'
 }
 
 dailyButton.addEventListener("click", showDaily)
